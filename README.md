@@ -177,6 +177,6 @@
 | `Command + Shift + O`       | 快速打开某一个类   |
 | `Command + Shift + up/down` | 切换声明/实现文件  |
 | `Command + Shift + F`       | 全局搜索          |
-| 'Command + F'               | 局部搜索          |
+| `Command + F`               | 局部搜索          |
 
  
