@@ -147,4 +147,30 @@
 1. 可以对原有的类进行扩展，重写。通过这些技巧来完成原有类无法完成的一些事情。
 2. 添加前缀的好处是不会与一些其他的类进行重名，导致项目编译出错。
 
+### 项目属性结构
+
+* Class
+	* AppDelegate 
+	* View
+		* BaseView
+		* Folder
+	* Controller
+		* BaseController
+		* Folder
+	* Model
+	  * BaseModel
+	  * Folder
+	* Utils
+	  * Folder
+	* Category
+	  * Folder
+	* Other
+	  
+	  
+	  
+	  
+	  
+	  
+
+
  
