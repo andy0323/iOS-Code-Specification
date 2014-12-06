@@ -40,13 +40,39 @@
 
 ### 命名规范
 
-iOS开发时，命名规范推荐使用驼峰式。
+命名规范推荐使用驼峰式。
 
-类名：大驼峰，如`NSString，NSArray，UIView`  
-变量：小驼峰，如`string，dataArray，userInfoView`  
-函数：小驼峰，如`- (void)addSubview:(UIView *)view;`  
+|类型|格式|举例|
+|---|---|---|
+|类名|大驼峰|`NSString，NSArray，UIView`  |
+|变量|小驼峰|`string，dataArray，userInfoView`|  
+|函数|小驼峰|`- (void)addSubview:(UIView *)view;`  |
+|宏定义|全大写|`VIEW_HEIGHT，VIEW_WIDTH`|
 
-这里要注意的是，宏定义写法上更推荐用全大写，单词按下划线分割，如`VIEW_HEIGHT，VIEW_WIDTH`
+### 注释规范
+
+注释分为两类
+
+1. 函数注释
+2. 执行代码注释
 
 
+#### 注释参考
+
+```
+/**
+ *  打印函数
+ */
+- (void)log
+{
+    // 打印内容
+    NSLog(@"Hello World");
+}
+```
+
+可能你会问为什么这么注释呢？
+
+如下图所示，调用的时候，函数的具体信息将会告诉调用者，清晰明了
+
+![注释提示](resource/func_statement_alert.png)
 
