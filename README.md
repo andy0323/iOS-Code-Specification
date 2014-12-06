@@ -32,4 +32,21 @@
 
 ![工程目录](resource/proj_tree_right.png)
 
-做到工程文件与文件夹结构一致，清晰明了，易于管理
+做到工程文件与文件夹结构一致，清晰明了，易于管理。
+
+## 代码规范
+
+开发项目时，应该做到的代码规范。
+
+### 命名规范
+
+iOS开发时，命名规范推荐使用驼峰式。
+
+类名：大驼峰，如`NSString，NSArray，UIView`  
+变量：小驼峰，如`string，dataArray，userInfoView`  
+函数：小驼峰，如`- (void)addSubview:(UIView *)view;`  
+
+这里要注意的是，宏定义写法上更推荐用全大写，单词按下划线分割，如`VIEW_HEIGHT，VIEW_WIDTH`
+
+
+
