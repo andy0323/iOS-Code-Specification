@@ -165,6 +165,7 @@
 	* Category
 	  * Folder
 	* Other
+	  * Folder
 	  
 	  
 	  
