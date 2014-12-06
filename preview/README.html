@@ -131,7 +131,7 @@
 .highlight .vg { color: #bb60d5 } /* Name.Variable.Global */
 .highlight .vi { color: #bb60d5 } /* Name.Variable.Instance */
 .highlight .il { color: #40a070 } /* Literal.Number.Integer.Long */</style>
-<h1>开发规范文档</h1>
+<h1>iOS代码规范 个人总结</h1>
 
 <h2>目录</h2>
 
@@ -139,6 +139,7 @@
 <li>工程目录规范</li>
 <li>代码规范</li>
 <li>框架使用规范</li>
+<li>Xcode快捷键</li>
 </ol>
 
 <h2>工程目录规范</h2>
@@ -176,6 +177,8 @@
 <h3>命名规范</h3>
 
 <p>命名规范推荐使用驼峰式。</p>
+
+<p><strong>注意：</strong> <code>请勿使用中文拼音来进行命名。</code></p>
 
 <table><thead>
 <tr>
@@ -303,6 +306,75 @@
 <li>可以对原有的类进行扩展，重写。通过这些技巧来完成原有类无法完成的一些事情。</li>
 <li>添加前缀的好处是不会与一些其他的类进行重名，导致项目编译出错。</li>
 </ol>
+
+<h3>树形结构</h3>
+
+<ul>
+<li>Class
+
+<ul>
+<li>AppDelegate </li>
+<li>View
+
+<ul>
+<li>BaseView</li>
+<li>Folder</li>
+</ul></li>
+<li>Controller
+
+<ul>
+<li>BaseController</li>
+<li>Folder</li>
+</ul></li>
+<li>Model
+
+<ul>
+<li>BaseModel</li>
+<li>Folder</li>
+</ul></li>
+<li>Utils
+
+<ul>
+<li>Folder</li>
+</ul></li>
+<li>Category
+
+<ul>
+<li>Folder</li>
+</ul></li>
+<li>Other
+
+<ul>
+<li>Folder</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h2>Xcode快捷键</h2>
+
+<table><thead>
+<tr>
+<th>快捷按键</th>
+<th>实现效果</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>Command + Shift + O</code></td>
+<td>快速打开某一个类</td>
+</tr>
+<tr>
+<td><code>Command + Shift + up/down</code></td>
+<td>切换声明/实现文件</td>
+</tr>
+<tr>
+<td><code>Command + Shift + F</code></td>
+<td>全局搜索</td>
+</tr>
+<tr>
+<td><code>Command + F</code></td>
+<td>局部搜索</td>
+</tr>
+</tbody></table>
 
 			          	</article>
 			        </div>
