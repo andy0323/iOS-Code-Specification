@@ -1,0 +1,330 @@
+
+	    <html>
+	      <head>
+				  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	        <title>README</title>
+					
+					<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+					<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+					<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+			
+				  <style>
+					pre {
+					    counter-reset: line-numbering;
+					    border: solid 1px #d9d9d9;
+					    border-radius: 0;
+					    background: #fff;
+					    padding: 0;
+					    line-height: 23px;
+					    margin-bottom: 30px;
+					    white-space: pre;
+					    overflow-x: auto;
+					    word-break: inherit;
+					    word-wrap: inherit;
+					}
+
+					pre a::before {
+					  content: counter(line-numbering);
+					  counter-increment: line-numbering;
+					  padding-right: 1em; /* space after numbers */
+					  width: 25px;
+					  text-align: right;
+					  opacity: 0.7;
+					  display: inline-block;
+					  color: #aaa;
+					  background: #eee;
+					  margin-right: 16px;
+					  padding: 2px 10px;
+					  font-size: 13px;
+					  -webkit-touch-callout: none;
+					  -webkit-user-select: none;
+					  -khtml-user-select: none;
+					  -moz-user-select: none;
+					  -ms-user-select: none;
+					  user-select: none;
+					}
+
+					pre a:first-of-type::before {
+					  padding-top: 10px;
+					}
+
+					pre a:last-of-type::before {
+					  padding-bottom: 10px;
+					}
+
+					pre a:only-of-type::before {
+					  padding: 10px;
+					}
+			
+					.highlight { background-color: #ffffcc } /* RIGHT */
+					</style>
+	      </head>
+	      <body>
+				  <div>
+							<div style='width:25%;'>
+									<ul id="tree" class="ztree" style='width:100%'>
+		
+									</ul>
+							</div>
+			        <div id='readme' style='width:70%;margin-left:20%;'>
+			          	<article class='markdown-body'>
+			            	<style>.highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f0f0f0; }
+.highlight .c { color: #60a0b0; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #007020; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .cm { color: #60a0b0; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #007020 } /* Comment.Preproc */
+.highlight .c1 { color: #60a0b0; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .kc { color: #007020; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #007020; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #007020; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #007020 } /* Keyword.Pseudo */
+.highlight .kr { color: #007020; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #902000 } /* Keyword.Type */
+.highlight .m { color: #40a070 } /* Literal.Number */
+.highlight .s { color: #4070a0 } /* Literal.String */
+.highlight .na { color: #4070a0 } /* Name.Attribute */
+.highlight .nb { color: #007020 } /* Name.Builtin */
+.highlight .nc { color: #0e84b5; font-weight: bold } /* Name.Class */
+.highlight .no { color: #60add5 } /* Name.Constant */
+.highlight .nd { color: #555555; font-weight: bold } /* Name.Decorator */
+.highlight .ni { color: #d55537; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #007020 } /* Name.Exception */
+.highlight .nf { color: #06287e } /* Name.Function */
+.highlight .nl { color: #002070; font-weight: bold } /* Name.Label */
+.highlight .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #062873; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #bb60d5 } /* Name.Variable */
+.highlight .ow { color: #007020; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #40a070 } /* Literal.Number.Bin */
+.highlight .mf { color: #40a070 } /* Literal.Number.Float */
+.highlight .mh { color: #40a070 } /* Literal.Number.Hex */
+.highlight .mi { color: #40a070 } /* Literal.Number.Integer */
+.highlight .mo { color: #40a070 } /* Literal.Number.Oct */
+.highlight .sb { color: #4070a0 } /* Literal.String.Backtick */
+.highlight .sc { color: #4070a0 } /* Literal.String.Char */
+.highlight .sd { color: #4070a0; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #4070a0 } /* Literal.String.Double */
+.highlight .se { color: #4070a0; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #4070a0 } /* Literal.String.Heredoc */
+.highlight .si { color: #70a0d0; font-style: italic } /* Literal.String.Interpol */
+.highlight .sx { color: #c65d09 } /* Literal.String.Other */
+.highlight .sr { color: #235388 } /* Literal.String.Regex */
+.highlight .s1 { color: #4070a0 } /* Literal.String.Single */
+.highlight .ss { color: #517918 } /* Literal.String.Symbol */
+.highlight .bp { color: #007020 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #bb60d5 } /* Name.Variable.Class */
+.highlight .vg { color: #bb60d5 } /* Name.Variable.Global */
+.highlight .vi { color: #bb60d5 } /* Name.Variable.Instance */
+.highlight .il { color: #40a070 } /* Literal.Number.Integer.Long */</style>
+<h1>开发规范文档</h1>
+
+<h2>目录</h2>
+
+<ol>
+<li>工程目录规范</li>
+<li>代码规范</li>
+<li>框架使用规范</li>
+</ol>
+
+<h2>工程目录规范</h2>
+
+<p>创建项目以后，必须注意的是将对象进行归类。</p>
+
+<p><strong>正确做法</strong>：在工程项目中创建文件夹，保证项目内目录与外部文件夹结构一致。</p>
+
+<p><strong>错误做法</strong>：创建项目之后，直接在工程中创建项目，而对象一直存储在工程目录的同级目录，导致所有资源文件全部存放在一起，难以管理。</p>
+
+<h3>图文说明:</h3>
+
+<p><img src="resource/proj_tree.png" alt="工程目录"></p>
+
+<p>上图为项目中的管理对象属性图，而项目工程文件夹的管理需要进行相应的树形结构管理。 </p>
+
+<p>下面则为两种不同的项目工程管理方式。</p>
+
+<h4>错误做法</h4>
+
+<p><img src="resource/proj_tree_wrong.png" alt="工程目录"></p>
+
+<p>当创建对象达到上百个时，此时工程项目中将会变得非常杂乱，这样也会导致将来想引用该工程的部分组件时，找起来非常的不便。</p>
+
+<h4>推荐做法</h4>
+
+<p><img src="resource/proj_tree_right.png" alt="工程目录"></p>
+
+<p>做到工程文件与文件夹结构一致，清晰明了，易于管理。</p>
+
+<h2>代码规范</h2>
+
+<p>开发项目时，应该做到的代码规范。</p>
+
+<h3>命名规范</h3>
+
+<p>命名规范推荐使用驼峰式。</p>
+
+<table><thead>
+<tr>
+<th>类型</th>
+<th>格式</th>
+<th>举例</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>类名</td>
+<td>大驼峰</td>
+<td><code>NSString，NSArray，UIView</code></td>
+</tr>
+<tr>
+<td>变量</td>
+<td>小驼峰</td>
+<td><code>string，dataArray，userInfoView</code></td>
+</tr>
+<tr>
+<td>函数</td>
+<td>小驼峰</td>
+<td><code>- (void)addSubview:(UIView *)view;</code></td>
+</tr>
+<tr>
+<td>宏定义</td>
+<td>全大写</td>
+<td><code>VIEW_HEIGHT，VIEW_WIDTH</code></td>
+</tr>
+</tbody></table>
+
+<h3>注释规范</h3>
+
+<p>开发过程中，注释需要好好的进行填写，特别是对函数的注释。一般情况下，源程序有效注释量必须在30%以上。 </p>
+
+<p>注释分为两类</p>
+
+<ol>
+<li>函数注释</li>
+<li>执行代码注释</li>
+</ol>
+
+<p><strong>注释参考</strong></p>
+<div class="highlight"><pre><span class="cm">/**</span>
+<span class="cm"> *  打印函数</span>
+<span class="cm"> */</span>
+<span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">log</span>
+<span class="p">{</span>
+    <span class="c1">// 打印内容</span>
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@&quot;Hello World&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+<p>可能你会问为什么这么注释呢？</p>
+
+<p>如下图所示，调用的时候，函数的具体信息将会告诉调用者，清晰明了。</p>
+
+<p><img src="resource/func_statement_alert.png" alt="注释提示"></p>
+
+<h3>其他注意事项</h3>
+
+<h4>函数解耦</h4>
+
+<ul>
+<li>当某一个函数内容特别庞大的时候，需要对内部功能进行拆简。</li>
+<li>当多个函数有重复代码时，需要对其重复部分进行拆分。</li>
+</ul>
+
+<h4>函数如果过长，参数过多需要进行折行处理</h4>
+<div class="highlight"><pre><span class="o">-</span><span class="w"> </span><span class="p">(</span><span class="vg">void</span><span class="p">)</span><span class="nl">addUsername:</span><span class="p">(</span><span class="vg">NSString</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="vg">username</span>
+<span class="w">           </span><span class="nl">password:</span><span class="p">(</span><span class="vg">NSString</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="vg">password</span><span class="p">;</span>
+</pre></div>
+<h4>代码缩进（一个缩进为四空格）</h4>
+
+<p>请一定要在正确的地方使用缩进，这样可以提高代码的可阅读行。</p>
+
+<h4>代码断行</h4>
+
+<p>代码在一行的列数请勿超过80（或100），超过需要进行断行。</p>
+
+<p>提示设置</p>
+
+<ol>
+<li>打开Xcode</li>
+<li>Command + ,</li>
+<li>选择<code>Text Editing</code></li>
+<li>勾选<code>page guide at column</code>，在后面括号填入一行最大列数</li>
+</ol>
+
+<h4>代码换行</h4>
+
+<p><code>if</code>，<code>while</code>，<code>for</code>，需要在开始前与结束后加入换行，例如</p>
+<div class="highlight"><pre><span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">func</span>
+<span class="p">{</span>
+    <span class="p">[</span><span class="nb">self</span> <span class="n">run</span><span class="p">];</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// 上下需要换行</span>
+    <span class="p">}</span>
+
+    <span class="p">[</span><span class="nb">self</span> <span class="n">run</span><span class="p">];</span>
+<span class="p">}</span>
+</pre></div>
+<h4>使用<code>#pragma mark -</code></h4>
+
+<p>将函数归类，当实现类函数特别多的时候，可以通过一些特定的含义进行代码归类。</p>
+
+<h2>使用框架时，注意事项</h2>
+
+<h3>继承框架提供的类</h3>
+
+<p>很多人在使用框架的时候，都会直接拿来其中的对象进行使用，其实这样对后续开发的扩展性带来了很大的影响。</p>
+
+<p>因此，推荐大家最好继承要调用的对象，然后以它作为基类，然后一个项目将会有一套统一前缀的基类。</p>
+
+<p>例如:</p>
+
+<ol>
+<li>JXModel</li>
+<li>JXView</li>
+<li>JXController</li>
+</ol>
+
+<h4>优点</h4>
+
+<ol>
+<li>可以对原有的类进行扩展，重写。通过这些技巧来完成原有类无法完成的一些事情。</li>
+<li>添加前缀的好处是不会与一些其他的类进行重名，导致项目编译出错。</li>
+</ol>
+
+			          	</article>
+			        </div>
+					</div>
+	      </body>
+	    </html>
+			<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+			<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+			<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+      <script type="text/javascript" src="toc/toc_conf.js"></script>
+      
+			<SCRIPT type="text/javascript" >
+			<!--
+			$(document).ready(function(){
+          var css_conf = eval(markdown_panel_style);
+          $('#readme').css(css_conf)
+          
+          var conf = eval(jquery_ztree_toc_opts);
+  				$('#tree').ztree_toc(conf);
+
+				
+			});
+			//-->
+			</SCRIPT>
+	  
